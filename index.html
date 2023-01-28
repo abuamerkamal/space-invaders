@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeydown="onKeyDown(event)">
+    <button class="btn-start" onclick="init()">PLAY</button>
+    <h1>Space Invaders Challenge</h1>
+    <h3>lives Left : <span>❤️❤️❤️</span></h3>
+    <h2>Score : <span>0</span></h2>
+    <div class="instructions">
+    </div>
+    <div class="game-container">
+    </div>
+    <div class="modal"><span class="msg"></span>
+        <button class="btn-restart" onclick="init()">Restart</button>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/alien.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
